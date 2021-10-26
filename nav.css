@@ -1,0 +1,139 @@
+@import url(style.css);
+.upper-nav{
+    list-style: none;
+}
+.upper-nav{
+    margin: 0;
+    display: flex;
+    background-color: var(--main-grey);
+    align-items: center;
+}
+
+.nav-icon{
+    margin-right: 10vw;
+}
+
+.nav-headline{
+    position: relative;
+    left: 20vw;
+    font-size: 2vw;
+}
+
+.searchbar{
+    margin-left: 50vw;
+    width: 8vw;
+}
+
+.lower-nav{
+   list-style: none;
+   display: flex;
+   background-color: var(--main-grey);
+   margin: 0;
+   padding: 0;
+   z-index: 0;
+}
+
+.lower-nav li{
+    padding: 0 5vw;
+    width: 100%;
+    white-space: nowrap;
+    border: 5px solid var(--main-grey);
+    
+}
+.lower-nav a{
+    text-decoration: none;
+    color: black;
+}
+.lower-nav li:hover{
+    border-bottom: 5px solid var(--main-red);
+}
+
+/* DROPDOWN ON HOVER */
+/* SUB-LIST-1 */
+.sub-list{
+    list-style: none;
+    position: absolute;
+    background-color: var(--main-grey);
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+    display: none;
+}
+
+.sub-list li{
+    padding: 0.2vw;
+    border: none;
+    text-align: center;
+    border: solid 5px var(--main-grey);
+    background-color: var(--main-grey);
+    text-align: center;
+}
+
+.sub-list-1{
+    right: 87vw;
+}
+.lower-nav .arrangementer:hover .sub-list-1{
+    display: block;
+}
+
+/* SUB-LIST-2 */
+
+
+.lower-nav .inspiration:hover .sub-list-2{
+    display: block;
+}
+
+.sub-list-2 {
+    right: 72vw;
+}
+
+/* SUB-LIST-3 */
+
+
+.lower-nav .tilbud:hover .sub-list-3{
+    display: block;
+}
+
+.sub-list-3 {
+    right: 55vw;
+}
+
+/* SUB-LIST-4 */
+.lower-nav .familie:hover .sub-list-4{
+    display: block;
+}
+
+.sub-list-4 {
+    right: 43vw;
+}
+
+/* SUB-LIST-5 */
+.lower-nav .info:hover .sub-list-5{
+    display: block;
+}
+
+.sub-list-5 {
+    right: 25vw;
+}
+
+/* SUB-LIST-6 */
+.lower-nav .openings:hover .sub-list-6{
+    display: block;
+}
+
+.sub-list-6 {
+    right: 16vw;
+}
+
+/* SUB-LIST-7 */
+ul .login{
+    padding: 0;
+    text-align: center;
+}
+.lower-nav .login:hover .sub-list-7{
+    display: block;
+}
+
+.sub-list-7 {
+    right: 2vw;
+}
