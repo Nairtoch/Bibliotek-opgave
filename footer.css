@@ -1,0 +1,27 @@
+@import url(style.css);
+
+footer{
+    display: flex;
+    background-color: var(--main-color-2);
+    margin-top: 10vw;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-icon{
+    height: 10vw;
+}
+
+.footer-notes{
+    display: flex;
+    gap: 1vw;
+}
+
+.socials{
+    display: flex;
+    gap: 3vw;
+}
+svg{
+    width: 8vw;
+    height: 8vw;
+}

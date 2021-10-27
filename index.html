@@ -7,13 +7,21 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4b2b2c958f.js" crossorigin="anonymous"></script>
 </head>
 <body>
    <nav>
        <ul class="upper-nav">
            <li><img src="kartoffel.svg" alt="fin-fyr" height="100px" class="nav-icon"></li>
-           <li><p class="nav-headline">Aalborg nye biblioteker</p></li>
-           <li><input type="text" placeholder="Søg..." class="searchbar"></li>
+           <li><p class="nav-headline"> <span> AnB</span>Aalborgs nye biblioteker</p></li>
+           <div class="search-bar-box">
+                <i class="fas fa-search"></i>
+                <li><input type="text" placeholder="Søg..." class="searchbar"></li>
+           </div>
        </ul>
        <ul class="lower-nav">
            <li class="arrangementer"><a href="#">Arrangementer</a>
@@ -60,7 +68,88 @@
    </nav> 
     <header>
         <img src="banner.jpg" class="banner-pic" alt="biblioteks-billede">
-        <h2>Velkommen til det nye bibliotek</h2>
+        <h2 class="banner-text">Velkommen til det nye bibliotek</h2>
     </header>
+    <section class="grid-1">
+        <div class="bookclub"></div>
+    </section>
+    <section class="form-section">
+        <section class="book-search">
+            <div>
+                <h2>Søg i vores arkiv og find en bog</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quia, earum!</p>
+            </div>
+            <form action="">
+                <label for="bookSearch"></label>
+                <input type="search" name="bookName" placeholder="Bog navn" required>
+                <input type="search" name="bookYear" placeholder="År udgivet" required>
+                <input type="search" name="author" placeholder="Forfatter" required>
+                <div>
+                    <input type="submit" value="Søg" class="submit-button">
+                    <input type="reset" value="Ryd søgefelt" class="submit-button">
+                </div>
+            </form>
+        </section>
+        <div class="book-search-pic">
+        </div>
+    </section>
+    <section class="card-section">
+        <h2 class="news-headline">Nyheder</h2>
+        <article class="card-grid">
+            <figure class="card">
+                <img src="event-1.jpg" alt="foredrag">
+                <figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id temporibus soluta accusantium ex, culpa cum, officia excepturi aliquam necessitatibus doloribus impedit voluptatum. Laudantium, architecto.</p>
+                    <a href="#">Læs mere</a>
+                </figcaption>
+            </figure>
+            <figure class="card">
+                <img src="event-1.jpg" alt="foredrag">
+                <figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id temporibus soluta accusantium ex, culpa cum, officia excepturi aliquam necessitatibus doloribus impedit voluptatum. Laudantium, architecto.</p>
+                    <a href="#">Læs mere</a>
+                </figcaption>
+            </figure>
+            <figure class="card">
+                <img src="event-1.jpg" alt="foredrag">
+                <figcaption>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet id temporibus soluta accusantium ex, culpa cum, officia excepturi aliquam necessitatibus doloribus impedit voluptatum. Laudantium, architecto.</p>
+                    <a href="#">Læs mere</a>
+                </figcaption>
+            </figure>
+        </article>
+    </section>
+    <footer>
+        <img src="kartoffel.svg" alt="icon" class="footer-icon">
+        <article class="footer-notes">
+            <ul>
+                <li><p>lorem</p></li>
+                <li><p>lorem</p></li>
+                <li><p>lorem</p></li>
+            </ul>
+            <ul>
+                <li><p>lorem</p></li>
+                <li><p>lorem</p></li>
+                <li><p>lorem</p></li>
+            </ul>
+            <ul>
+                <li><p>lorem</p></li>
+                <li><p>lorem</p></li>
+                <li><p>lorem</p></li>
+            </ul>
+        </article>
+        <section class="socials">
+            <svg xmlns="http://www.w3.org/2000/svg" width="87.04" height="86.513" viewBox="0 0 87.04 86.513">
+                <path id="facebook-brands" d="M95.04,51.52A43.52,43.52,0,1,0,44.72,94.513V64.1H33.664V51.52H44.72V41.931C44.72,31.025,51.213,25,61.157,25a66.976,66.976,0,0,1,9.743.849v10.7H65.411c-5.4,0-7.091,3.355-7.091,6.8V51.52H70.39L68.459,64.1H58.32V94.513A43.536,43.536,0,0,0,95.04,51.52Z" transform="translate(-8 -8)"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="89.847" height="72.972" viewBox="0 0 89.847 72.972">
+                <path id="twitter-brands" d="M80.612,66.268c.057.8.057,1.6.057,2.394,0,24.343-18.528,52.392-52.392,52.392A52.037,52.037,0,0,1,0,112.788a38.094,38.094,0,0,0,4.447.228,36.878,36.878,0,0,0,22.861-7.867,18.447,18.447,0,0,1-17.217-12.77,23.222,23.222,0,0,0,3.478.285,19.476,19.476,0,0,0,4.846-.627A18.417,18.417,0,0,1,3.648,73.964v-.228a18.545,18.545,0,0,0,8.323,2.337,18.442,18.442,0,0,1-5.7-24.628A52.341,52.341,0,0,0,44.239,70.715a20.787,20.787,0,0,1-.456-4.219A18.432,18.432,0,0,1,75.652,53.9,36.254,36.254,0,0,0,87.339,49.45a18.364,18.364,0,0,1-8.1,10.148,36.915,36.915,0,0,0,10.6-2.85A39.583,39.583,0,0,1,80.612,66.268Z" transform="translate(0 -48.082)"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="78.66" height="78.643" viewBox="0 0 78.66 78.643">
+                <path id="instagram-brands" d="M39.264,50.983A20.163,20.163,0,1,0,59.427,71.146,20.131,20.131,0,0,0,39.264,50.983Zm0,33.272A13.109,13.109,0,1,1,52.373,71.146,13.132,13.132,0,0,1,39.264,84.255Zm25.691-34.1a4.7,4.7,0,1,1-4.7-4.7A4.692,4.692,0,0,1,64.955,50.159Zm13.354,4.773c-.3-6.3-1.737-11.88-6.352-16.478-4.6-4.6-10.178-6.037-16.478-6.352-6.493-.369-25.954-.369-32.447,0-6.282.3-11.863,1.737-16.478,6.335S.517,48.614.2,54.914c-.369,6.493-.369,25.954,0,32.447.3,6.3,1.737,11.88,6.352,16.478s10.178,6.037,16.478,6.353c6.493.368,25.954.368,32.447,0,6.3-.3,11.88-1.737,16.478-6.353,4.6-4.6,6.037-10.178,6.352-16.478C78.677,80.868,78.677,61.425,78.309,54.932Zm-8.388,39.4a13.271,13.271,0,0,1-7.476,7.476c-5.177,2.053-17.461,1.579-23.181,1.579s-18.022.456-23.181-1.579a13.271,13.271,0,0,1-7.476-7.476C6.554,89.151,7.028,76.867,7.028,71.146S6.571,53.124,8.607,47.965a13.271,13.271,0,0,1,7.476-7.476c5.177-2.053,17.461-1.579,23.181-1.579s18.022-.456,23.181,1.579a13.271,13.271,0,0,1,7.476,7.476C71.974,53.142,71.5,65.426,71.5,71.146S71.974,89.168,69.921,94.328Z" transform="translate(0.075 -31.825)"/>
+            </svg>          
+        </section>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>

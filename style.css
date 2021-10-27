@@ -1,11 +1,15 @@
 :root{
-    --main-grey: #555b66;
-    --main-red: #582729;
+    --main-color-1: #2ea480;
+    --second-color-1: #388c83;
+    --main-color-2: #427485;
+    --second-color-2: #2e8da4;
 }
 
 body{
     margin: 0;
     padding: 0;
+    background-color: var(--main-color-1);
+    font-family: 'EB Garamond', serif;
 }
 
 header{
@@ -22,4 +26,114 @@ header{
     width: 100%;
     height: 40vw;
     z-index: -2;
+    object-fit: cover;
+}
+
+.banner-text{
+    position: relative;
+    bottom: 10vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2vw;
+    color: var(--main-color-1);
+    text-shadow: black 1px 2px;
+    z-index: -2;
+}
+
+.grid-1{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    position: relative;
+    bottom: 7vw;
+    margin: 1vw;
+    gap: 1vw;
+    position: relative;
+    z-index: -2;
+}
+
+.grid-1 article{
+    border: 5px solid var(--second-color-1);
+    background-color: var(--second-color-2);
+    border-radius: 10px;
+}
+
+
+.grid-1 p{
+    padding: 2vw;
+    margin: 3vw 0;
+    background-color: var(--second-color-2);
+}
+.bookclub{
+    width: 100%;
+    height: 30vw;
+    background-image: url("/bookclub.jpg");
+    background-size: cover;
+    box-shadow: 0 0 8px 8px var(--main-color-1) inset;
+}
+.form-section{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+.book-search {
+    border: var(--second-color-2) 5px solid;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw;
+    margin: 1vw;
+    background-image: url("/401911130_THINKING_FACE_BG_400.gif");
+    background-size: cover;
+}
+
+.book-search-pic{
+    background-image: url(/bookfind.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 8px 8px var(--main-color-1) inset;
+}
+
+.submit-button{
+    margin: 1vw;
+    padding: 0.5vw;
+    background-color: var(--second-color-2);
+}
+
+
+form div{
+    background-color: var(--second-color-2);
+    margin: 1vw 0;
+}
+
+.news-headline{
+    border-bottom: black 2px solid;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-grid{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.card{
+    height: 10vw;
+    width: 20vw;
+}
+
+.card a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+    left: 16.5vw;
+    bottom: 1vw;
+    z-index: -2;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

@@ -1,11 +1,17 @@
 @import url(style.css);
+nav{
+    box-shadow: black 2px 5px 11px 5px;
+    position: fixed;
+    width: 100%;
+    /* border-bottom: var(--main-red) solid 5px; */
+}
 .upper-nav{
     list-style: none;
 }
 .upper-nav{
     margin: 0;
     display: flex;
-    background-color: var(--main-grey);
+    background-color: var(--main-color-2);
     align-items: center;
 }
 
@@ -17,17 +23,46 @@
     position: relative;
     left: 20vw;
     font-size: 2vw;
+    text-align: center;
+}
+
+.nav-headline span{
+    display: block;
+    border-bottom: var(--main-color-1) solid 5px;
 }
 
 .searchbar{
-    margin-left: 50vw;
-    width: 8vw;
+    text-decoration: none;
+    border: var(--main-color-1) 4px solid;
+    border-radius: 10px;
+    background-color: var(--main-color-1);
+    outline: none;
 }
 
+.search-bar-box{
+    display: flex;
+    position: absolute;
+    right: 0;
+    top: 4vw;
+    margin-right: 5vw;
+    background-color: var(--main-color-1);
+    border: var(--main-color-1) 5px solid;
+    border-radius: 10px;
+}
+
+.fa-search{
+    color: var(--main-color-2);
+    position: relative;
+    top: 0.3vw;
+}
+
+.fa-search:hover{
+    cursor: pointer;
+}
 .lower-nav{
    list-style: none;
    display: flex;
-   background-color: var(--main-grey);
+   background-color: var(--main-color-2);
    margin: 0;
    padding: 0;
    z-index: 0;
@@ -37,7 +72,8 @@
     padding: 0 5vw;
     width: 100%;
     white-space: nowrap;
-    border: 5px solid var(--main-grey);
+    border: 5px solid var(--main-color-2);
+    margin: 0;
     
 }
 .lower-nav a{
@@ -45,15 +81,21 @@
     color: black;
 }
 .lower-nav li:hover{
-    border-bottom: 5px solid var(--main-red);
+    border-bottom: 5px solid var(--main-color-1);
+    color: var(--second-color-1);
 }
 
+.sub-list li:hover{
+    transition: 300ms;
+    background-color: var(--main-color-1);
+    border-color: var(--main-color-1);
+}
 /* DROPDOWN ON HOVER */
 /* SUB-LIST-1 */
 .sub-list{
     list-style: none;
     position: absolute;
-    background-color: var(--main-grey);
+    background-color: var(--main-color-2);
     margin: 0;
     padding: 0;
     z-index: -1;
@@ -64,13 +106,13 @@
     padding: 0.2vw;
     border: none;
     text-align: center;
-    border: solid 5px var(--main-grey);
-    background-color: var(--main-grey);
+    border: solid 5px var(--main-color-2);
+    background-color: var(--main-color-2);
     text-align: center;
 }
 
 .sub-list-1{
-    right: 87vw;
+    right: 85vw;
 }
 .lower-nav .arrangementer:hover .sub-list-1{
     display: block;
@@ -84,7 +126,7 @@
 }
 
 .sub-list-2 {
-    right: 72vw;
+    right: 69vw;
 }
 
 /* SUB-LIST-3 */
@@ -95,7 +137,7 @@
 }
 
 .sub-list-3 {
-    right: 55vw;
+    right: 53vw;
 }
 
 /* SUB-LIST-4 */
@@ -113,7 +155,7 @@
 }
 
 .sub-list-5 {
-    right: 25vw;
+    right: 22vw;
 }
 
 /* SUB-LIST-6 */
